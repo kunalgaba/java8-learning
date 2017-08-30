@@ -1,17 +1,4 @@
-package com.j8.gaba.j8learning;
-
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.util.*;
-import java.util.stream.Collectors;
-
-@SpringBootApplication
-public class J8LearningApplication {
-
-    public static void main(String[] args) {
-        //SpringApplication.run(J8LearningApplication.class, args);
-
-        //Given a list of numbers, find the even numbers, double them and print the output
+ //Given a list of numbers, find the even numbers, double them and print the output
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
         numbers.stream()
                .filter(e -> e % 2 == 0)
@@ -69,8 +56,3 @@ public class J8LearningApplication {
                .filter(e->e.getTitle().equals("Mr."))
                .collect(Collectors.toMap(Person::getName,Person::getTitle)));
 
-
-
-
-    }
-}
